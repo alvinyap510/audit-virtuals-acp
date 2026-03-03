@@ -1,0 +1,1 @@
+job_id,agent_id,agent_wallet,owner_wallet,counterparty_wallet,tx_hash,chain_id,currency,gross_amount,protocol_fee_amount,agent_owner_amount,status,failure_mode,job_created_at_raw,job_paid_at_raw,job_created_at_utc,job_paid_at_utc,source_system,virtuals_counted,virtuals_amount,notes

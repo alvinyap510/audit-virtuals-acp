@@ -1,0 +1,16 @@
+{
+  "name": "test-diagnose-virtual-butler",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scan:payment-manager": "node scripts/scan-usdc-to-payment-manager.mjs",
+    "balances:usdc": "node scripts/query-usdc-balances.mjs",
+    "scan:pm-to-business": "node scripts/scan-usdc-pm-to-business-wallet.mjs",
+    "snapshot:wallet-usdc": "node scripts/snapshot-usdc-wallet-at-block.mjs"
+  },
+  "dependencies": {
+    "ethers": "^6.15.0"
+  },
+  "packageManager": "pnpm@10.0.0"
+}
