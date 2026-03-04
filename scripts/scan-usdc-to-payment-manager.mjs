@@ -17,7 +17,7 @@ const DEFAULT_WALLETS_FILE = "BOT_WALLETS.md";
 const SCAN_CONFIG = {
   rpcUrl: "https://base-mainnet.g.alchemy.com/v2/SHPLF4YT-0gN1ieWxTl21F2gTaBNGAWy",
   usdcAddress: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-  startBlock: 41809077,
+  startBlock: 42600000,
   chunkSize: 10000,
   walletsFile: DEFAULT_WALLETS_FILE,
   out: "",
@@ -299,6 +299,10 @@ Optional CLI overrides (still supported):
       console.log(`  ${walletLower}, raw=${totalRaw.toString()}, ${symbol}=${formatUnits(totalRaw, decimals)}`);
     }
   }
+
+  const grandTotal = [...totalsByWallet.values()].reduce((sum, v) => sum + v, 0n);
+  console.log("");
+  console.log(`[result] grand total: ${formatUnits(grandTotal, decimals)} ${symbol}`);
 }
 
 main().catch((error) => {

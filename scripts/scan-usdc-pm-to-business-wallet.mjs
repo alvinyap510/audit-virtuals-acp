@@ -15,8 +15,8 @@ const PAYOUT_CONFIG = {
   rpcUrl: "https://base-mainnet.g.alchemy.com/v2/SHPLF4YT-0gN1ieWxTl21F2gTaBNGAWy",
   usdcAddress: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
   paymentManager: "0xEF4364Fe4487353dF46eb7c811D4FAc78b856c7F",
-  receiverWallet: "0xB74e20957654503D0a7F49Bcb01FA86950467657",
-  startBlock: 42126570,
+  receiverWallet: "0x8bcd158d39157aEe936D21fC7D01AbbB540002d8",
+  startBlock: 42600000,
   chunkSize: 10000,
   out: "",
   decimalsOverride: null
